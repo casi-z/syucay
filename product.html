@@ -1,0 +1,546 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bs-height.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/sal.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <title>Сюцай</title>
+</head>
+
+<body class="bg-body">
+<div class="offcanvas offcanvas-end bg-body text-white" style="z-index: 1051" tabindex="-1" id="burgerMenu"
+     aria-labelledby="burgerMenuLabel">
+  <div class="offcanvas-header p-0">
+    <ul class="nav nav-tabs burger-tabs col-12 border-0" id="myTab" role="tablist">
+      <li class="nav-item col-4" role="presentation">
+        <button class="nav-link col-12 py-3 text-white active" id="nav-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-tab-pane" type="button"
+                role="tab" aria-controls="nav-tab-pane" aria-selected="true">Навигация
+        </button>
+      </li>
+      <li class="nav-item col-4" role="presentation">
+        <button class="nav-link col-12 py-3 text-white" id="contacts-tab" data-bs-toggle="tab"
+                data-bs-target="#contacts-tab-pane" type="button"
+                role="tab" aria-controls="contacts-tab-pane" aria-selected="false">Контакты
+        </button>
+      </li>
+      <li class="col-4 nav-link d-flex justify-content-center align-items-center">
+        <button class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="bi bi-x-lg text-white"></i>
+        </button>
+      </li>
+    </ul>
+
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="tab-content " id="myTabContent">
+      <div class="tab-pane fade active show" id="nav-tab-pane" role="tabpanel" aria-labelledby="nav-tab" tabindex="0">
+        <ul class="navbar-nav menu-burger px-3">
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#"><h5>Главная</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                  <button class="accordion-button col-12 p-0 bg-body text-white" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true"
+                          aria-controls="collapseOne">
+                    <h5>Новости</h5>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse bg-body collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <input type="text" class="form-control rounded-0" placeholder="Поиск"
+                           aria-label="Recipient's username"
+                           aria-describedby="basic-addon2">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#"><h5>Об авторе</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#"><h5>Об учителе</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#"><h5>Что такое сюцай</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#"><h5>Об академии</h5></a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="tab-pane fade" id="contacts-tab-pane" role="tabpanel" aria-labelledby="contacts-tab" tabindex="0">
+        <h5 class="py-3">
+          Позвоните, напишите на электронную почту или приезжайте в офис - мы всегда готовы к общению с Вами!
+        </h5>
+        <h3 class="pt-3">
+          <b>
+            г. Москва
+          </b>
+        </h3>
+        <h5 class="">
+          ул. Покрышкина, 4, офис 405
+        </h5>
+        <a class="text-decoration-none" href="">
+          <h6 style="color:#617E98" class="pb-5">
+            Показать на карте
+          </h6>
+        </a>
+
+        <a class="text-decoration-none text-white" href="tel:+74954954954">
+          <h2>+7 495 495 49 54</h2>
+        </a>
+        <a class="text-decoration-none text-white" href="tel:+74954954954">
+          <h2>+7 495 495 49 54</h2>
+        </a>
+
+        <h6 style="color:#617E98" class="pt-5">
+          График работы
+
+        </h6>
+        <h5>
+          Пн-Пт: с 10:00 до 19:00
+        </h5>
+        <h5>
+          Сб, Вс: выходной
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+<header style="z-index: 50" class="position-sticky overflow-hidden top-0 left-0 z-5 col-12 bg-body py-1">
+  <div class="container-md d-flex justify-content-between align-items-center">
+    <a class="navbar-brand d-md-none d-flex" href="index.html">
+      <img src="./img/logo.svg" alt="zhanat">
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light main-menu d-md-flex d-none">
+
+      <a class="navbar-brand d-md-flex d-none" href="index.html">
+        <img src="./img/logo.svg" alt="zhanat">
+      </a>
+
+
+      <ul class="d-flex navbar-nav flex-row menu mx-5 mb-2 mb-lg-0">
+
+        <li class="nav-item px-3">
+          <a class="nav-link text-white" href="#seminar">Семинары</a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link text-white" href="#coaching">Коучинг</a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link text-white" href="#group">Обучение в группах</a>
+        </li>
+
+      </ul>
+
+
+    </nav>
+    <div class="col-md-1 col-auto h-12 d-flex justify-content-center align-items-center me-lg-0 me-1">
+      <a data-bs-toggle="offcanvas" href="#burgerMenu" role="button" aria-controls="burgerMenu" class="btn btn-flat">
+        <img src="./img/burger.svg" alt="">
+      </a>
+    </div>
+  </div>
+
+</header><div class="col-12 bg-body overflow-x-hidden">
+  <div class="container-md pt-5 ps-md-auto ps-0">
+    <div style="color: #8DA2B5">
+      <a style="color: #8DA2B5" class="text-decoration-none" href="index.html">Главная</a> | Страница продукта (коучинг обучение в группах)
+    </div>
+    <h2 data-sal="flip-up" data-sal-delay="1" data-sal-duration="1000" class="text-uppercase ps-md-0 ps-auto h1 text-white my-5">
+      3-х дневный интенсив «код души» <br>
+      3 поток март-апрель
+    </h2>
+    <div class="col-12 d-flex flex-lg-row gap-lg-0 gap-5 flex-column ">
+      <div class="col-lg-6 col-12 d-flex align-items-center gap-5 flex-sm-row flex-column">
+        <button class="btn ps-3 d-flex btn-secondary bg-danger border-danger col-sm-4 col-12 text-start">
+          <span class="h4 b-normal m-0">Купить</span>
+        </button>
+        <a style="border-bottom: 1px dashed white" class="text-white h4 b-normal pb-1 text-decoration-none" href="">
+          Отзывы
+        </a>
+      </div>
+
+      <div class="col-lg-6 date position-relative col-12 d-flex align-items-center bg-white">
+        <div class="bg-primary p-4">
+          <img style="filter: invert()" src="./img/icons/calendar.svg">
+        </div>
+        <div class="ps-3 h4 b-normal m-0">
+          31 марта 02 и 04 апреля 2021 года
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 bg-white">
+  <div class="container-md pt-5">
+    <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500" class="col-12">
+      <i class="h4 b-normal d-block text-center">
+
+        Первичная Цель Человека - это развитие своего сознания. Через Проработку Задачи от Творца на
+        СЛУЖЕНИЕ ЛЮДЯМ - каждый выстроит свою собственную, гармоничную стратегию жизни
+
+      </i>
+    </div>
+    <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500" class="col-12 py-5 d-flex flex-md-row flex-column-reverse">
+      <div class="col-md-6 col-12 d-flex flex-column pe-xl-4 pe-lg-2 pe-0">
+        <ul class="list d-flex flex-column row-gap-2 ps-0 pe-5 mb-5">
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.ffff
+          </li>
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.ffff
+          </li>
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </li>
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </li>
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </li>
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </li>
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </li>
+          <li class="h5 d-flex align-items-center b-normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </li>
+
+        </ul>
+        <div class="col-12 d-flex gap-5 flex-wrap">
+          <div style="background: rgb(241, 242, 247)" class="col-3">
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+
+
+          </div>
+          <div style="background: rgb(241, 242, 247)" class="col-3">
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+
+
+          </div>
+          <div style="background: rgb(241, 242, 247)" class="col-3">
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+
+
+          </div>
+          <div style="background: rgb(241, 242, 247)" class="col-3">
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+
+
+          </div>
+          <div style="background: rgb(241, 242, 247)" class="col-3">
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+
+
+          </div>
+          <div style="background: rgb(241, 242, 247)" class="col-3">
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+            <div>fgggggggggg</div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-md-6 col-12 ps-xl-5 ps-lg-3 ps-0">
+
+        <p class='h5 b-normal'>
+
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque consectetur delectus deleniti
+          ducimus exercitationem expedita, incidunt inventore, itaque iure modi mollitia officiis sint, totam
+          voluptatum? Blanditiis magnam nam rem.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque consectetur delectus deleniti
+          ducimus exercitationem expedita, incidunt inventore, itaque iure modi mollitia officiis sint, totam
+          voluptatum? Blanditiis magnam nam rem.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque consectetur delectus deleniti
+          ducimus exercitationem expedita, incidunt inventore, itaque iure modi mollitia officiis sint, totam
+          voluptatum? Blanditiis magnam nam rem.
+
+        </p>
+        <p class="h5 b-normal pt-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque consectetur delectus deleniti
+          ducimus exercitationem expedita, incidunt inventore, itaque iure modi mollitia officiis sint, totam
+          voluptatum? Blanditiis magnam nam rem.
+        </p>
+        <p class="h5 b-normal pt-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque consectetur delectus deleniti
+          ducimus exercitationem expedita, incidunt inventore, itaque iure modi mollitia officiis sint, totam
+          voluptatum? Blanditiis magnam nam rem.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque consectetur delectus deleniti
+          ducimus exercitationem expedita, incidunt inventore, itaque iure modi mollitia officiis sint, totam
+          voluptatum? Blanditiis magnam nam rem.
+        </p>
+        <p class="h5 b-normal pt-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque consectetur delectus deleniti
+          ducimus exercitationem expedita, incidunt inventore,
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<div style="background: linear-gradient( white 50%, transparent 50%); height: 348px" class="col-12 swiper d-flex gap-5 justify-content-center overflow-hidden">
+  <div id="product-slider" class="col-12 swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide  bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide  bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide  bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+      <div class="swiper-slide bg-primary">
+        f
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="pt-5 mt-5 overflow-x-hidden">
+
+  <div class="container-md">
+    <div class="col-12 d-flex text-white flex-md-row flex-column">
+      <div data-sal="slide-right" data-sal-delay="1" data-sal-duration="1500" class="col-md-4 pe-5">
+        <h2 class="h1 text-uppercase">
+          контакты
+        </h2>
+        <p class="pb-4 h5 b-normal">
+          Позвоните, напишите на электронную почту или приезжайте в офис - мы всегда готовы к общению с Вами!
+        </p>
+        <h4 class="mb-0 pt-0">
+          Москва
+        </h4>
+        <p>
+          ул. Покрышкина, 4, офис 405
+        </p>
+        <a class="text-decoration-none" href="">
+          <h6 style="color:#617E98" class="pb-3">
+            Показать на карте
+          </h6>
+        </a>
+
+        <a class="text-decoration-none d-flex gap-xl-4 gap-2 mt-4 align-items-center text-white" href="tel:+74954954954">
+          <h3>+7 495 495 49 54 </h3>
+          <img width="37" height="37" class="align-self-start footer-icon" src="./img/icons/whatsapp-fill.svg" alt="w">
+        </a>
+        <a class="text-decoration-none d-flex gap-xl-4 gap-2 mb-4 align-items-center text-white" href="tel:+74954954954">
+          <h3>+7 495 495 49 54 </h3>
+          <img width="37" height="37" class="align-self-start footer-icon" src="./img/icons/telegram-fill.svg" alt="t">
+        </a>
+
+        <h6 style="color:#617E98" class="pt-3">
+          График работы
+
+        </h6>
+        <h5>
+          Пн - Пт: с 10:00 до 19:00
+        </h5>
+        <h5>
+          Сб - Вс: выходной
+        </h5>
+      </div>
+      <div data-sal="slide-left" data-sal-delay="1" data-sal-duration="1500" data-state="default"
+           class="col-md-8 bg-danger form-container position-relative pb-2 ps-sm-5 ps-2 pe-sm-5 pe-2 pt-sm-5 pt-2">
+        <h4 class="mb-2">Напишите нам</h4>
+        <span>Заполните форму, наш менеджер свяжется с вами в ближайшее время</span>
+        <form class="" id="user-data">
+          <div class="fallback">
+            <img class="loader" src="./img/icons/loading.svg" alt="">
+
+            <div class="error justify-content-center align-items-center flex-column">
+              <i style="font-size: 8rem" class="bi bi-x-lg text-danger"></i>
+              <div class="h6 text-danger bg-white">
+                <b class="text-center">Ошибка на сервере, попробуйте позже</b>
+              </div>
+            </div>
+            <div class="success justify-content-center align-items-center flex-column">
+              <img src="./img/icons/check-success.svg" alt="">
+              <div class="h6 text-success bg-white">
+                <b class="text-center">Спасибо! Наш менеджер свяжется с вами в ближайшее время</b>
+              </div>
+            </div>
+          </div>
+          <input autocomplete="off" type="text" class="form-control rounded-0 mt-3" name="name" id="name"
+                 placeholder="Ваше имя">
+          <div class="invalid-feedback bg-white">
+            Ваше имя слишком короткое! Введите хотя бы две буквы ☹
+          </div>
+          <div class="valid-feedback bg-white">
+            Красивое имя! 🥳
+          </div>
+          <div class="d-flex gap-3 flex-sm-row flex-column">
+            <input autocomplete="off" type="email" class="form-control rounded-0 my-3" id="email" name="email"
+                   placeholder="E-mail">
+            <input autocomplete="off" type="tel" class="form-control rounded-0 my-3" name="phone" id="phone"
+                   placeholder="+7 (___) ___ __ __">
+          </div>
+          <textarea class="form-control rounded-0" placeholder="Ваше сообщение" name="message" id="message"
+                    rows="5"></textarea>
+
+          <div
+            class="d-flex flex-xl-row flex-column col-12 justify-content-between mt-5 align-items-xl-center gap-xl-0 gap-4 align-items-start">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" name="user-agreement" id="user-agreement">
+              <label class="form-check-label" for="user-agreement">
+                Ознакомлен(а) с пользовательским соглашением
+              </label>
+
+            </div>
+
+            <button disabled type="submit" class="btn btn-secondary col-xl-3 col-sm-4 col-12">
+              <span>Отправить</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./js/vendor/sal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

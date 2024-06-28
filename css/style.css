@@ -1,0 +1,782 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* bs-height.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+
+}
+
+html, body {
+  width: 100%;
+  /*overflow-x: hidden!important;*/
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+#birth-date {
+  background: transparent !important;
+  transition-duration: 300ms;
+}
+
+#birth-date::placeholder {
+  color: white !important;
+}
+
+#birth-date:focus {
+  color: black !important;
+  background: white !important;
+}
+
+#birth-date:focus::placeholder {
+  color: black !important;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu .nav-link {
+  transition: border-bottom-color 300ms;
+  border-bottom: 2px solid transparent;
+}
+
+.menu .nav-link:hover, .menu .nav-link._active {
+  border-bottom-color: #e73205;
+}
+
+.social-button img {
+  transition: transform 300ms;
+}
+
+.social-button:hover img {
+
+  transform: scale(1.5);
+}
+
+.slider-button {
+  font-size: 40px;
+  color: #e4110e;
+  border: none;
+  transition-duration: 300ms;
+
+}
+
+.slider-button:hover {
+  border-color: white;
+  background: #e4110e;
+  color: #fff;
+}
+
+.photo-slider-next-button {
+}
+
+.hover-scale {
+  transition-duration: 1000ms;
+}
+
+.hover-scale:hover {
+  transform: scale(1.3);
+}
+
+.menu-burger li {
+  border-bottom: 2px dashed #1f588d;
+}
+
+.offcanvas-header {
+
+}
+
+.burger-tabs .nav-link, .nav-link.active {
+  background: none !important;
+  border: none !important;
+  border-right: 1px solid #1f588d !important;
+
+  border-radius: 0 !important;
+}
+
+.burger-tabs .nav-link {
+  border-bottom: 1px solid #1f588d !important;
+}
+
+.burger-tabs .nav-link.active {
+  border-bottom: 1px solid #FFF !important;
+}
+
+.past-event {
+  /*background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/portrait.jpg) center;*/
+  position: relative;
+  background-size: 100%;
+  transition-duration: 300ms;
+  overflow: hidden;
+}
+
+.past-event::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.past-event img {
+  transition-duration: 2000ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+
+}
+
+.past-event:hover img {
+  transform: scale(1.1);
+}
+
+.badged::before {
+  content: '';
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: block;
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-150%, -50%);
+}
+
+.badge-primary::before {
+  background: rgb(15, 109, 197);
+}
+
+.badge-yellow::before {
+  background: rgb(255, 187, 0);
+}
+
+.badge-danger::before {
+  background: #e4110e;
+}
+
+.schedule-card {
+  width: calc(33.33333333333% - 2rem);
+}
+
+@media (max-width: 768px) {
+  .schedule-card {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 425px) {
+  .schedule-card {
+    width: 100%;
+  }
+}
+
+.diplom {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 2vw;
+  z-index: 0;
+  right: 2vw;
+
+}
+
+.diplom::before {
+  width: 5rem;
+  height: 7rem;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -5rem;
+  left: 2rem;
+  background: inherit;
+}
+
+#commentsTab .nav-link.active {
+  color: black !important;
+  background: white !important;
+  border: none !important;
+}
+
+.course {
+  transition-duration: 1000ms;
+
+}
+
+.course:hover {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  padding-top: 2rem!important;
+  justify-content: space-between!important;
+  padding-bottom: 2rem!important;
+}
+
+.course__header{
+  transition-delay: 1000ms;
+  transition-duration: 500ms;
+}
+
+.course__text {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  margin-bottom: 0;
+  transition-duration: 1500ms;
+
+}
+
+.course__button {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  transition-duration: 1500ms;
+
+}
+
+.course:hover .course__text, .course:hover .course__button {
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: auto !important;
+
+}
+.course:hover .course__button{
+  padding-top: 1rem!important;
+  padding-bottom: 1rem!important;
+}
+
+.course:hover .course__author {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+.course:hover .course__header {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+.course:hover .course__text{
+}
+.seminar {
+  background: linear-gradient(90deg, rgb(15, 109, 197) 70%, #e4110e 30%);
+}
+
+@media (max-width: 1025px) {
+  .seminar {
+    background: rgb(15, 109, 197);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgb(14, 44, 72);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #e4110e;
+  transition-duration: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 20px;
+}
+[data-scrollbar="blue"]::-webkit-scrollbar-thumb, [data-scrollbar="blue"] *::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+}
+[data-scrollbar="green"]::-webkit-scrollbar-thumb, [data-scrollbar="green"] *::-webkit-scrollbar-thumb {
+  background: #20ed00;
+}
+[data-scrollbar="yellow"]::-webkit-scrollbar-thumb, [data-scrollbar="yellow"] *::-webkit-scrollbar-thumb {
+  background: #ffef20;
+}
+[data-scrollbar="red"]::-webkit-scrollbar-thumb, [data-scrollbar="red"] *::-webkit-scrollbar-thumb {
+  background: #e4110e;
+}
+
+
+
+.fallback {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+}
+
+.fallback .success,
+.fallback .error {
+  display: none;
+}
+
+.fallback .error::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #e4110e;
+  width: 0;
+  height: 5px;
+  animation: error 2s forwards 1;
+}
+
+.fallback .loader {
+  display: none;
+  animation: loading 1000ms linear infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes error {
+  100% {
+    width: 100%;
+  }
+}
+
+.form-container[data-state="loading"] .fallback,
+.form-container[data-state="success"] .fallback,
+.form-container[data-state="error"] .fallback,
+.form-container[data-state="loading"] .fallback .loader,
+.form-container[data-state="success"] .fallback .success,
+.form-container[data-state="error"] .fallback .error {
+  display: flex;
+}
+.academy{
+  background: linear-gradient(90deg, #e4110e 70%, #000 30%);
+}
+@media (max-width: 767px) {
+  .academy{
+    background: linear-gradient( #e4110e 70%, #000 30%);
+  }
+}
+.quantity {
+  width: calc(33.33333333333333333% - 3rem);
+}
+
+@media (max-width: 426px) {
+  .quantity {
+    width: 100%
+  }
+}
+
+.list li {
+  list-style: none;
+
+}
+.list li::before {
+  display: inline-block;
+  margin-right: 1.6rem;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #0e6dc4;
+  border-radius: 100%;
+
+}
+.course-slider-header{
+  z-index: 3;
+}
+#coaching:has(.course:hover) .course-slider-header{
+  z-index: -1;
+}
+
+.course-slider-prev-button i, .course-slider-next-button i {
+  font-size: calc(1.325rem + 0.9vw);
+  transition-duration: 300ms;
+}
+
+.course-slider-prev-button:hover i, .course-slider-next-button:hover i {
+  color: #e4110e;
+}
+#course-slider{
+  z-index: 0;
+}
+
+#past-event-slider .swiper-slide:last-child {
+  /*filter: blur(5px);*/
+}
+.what-syucay {
+  background: linear-gradient(90deg, rgb(12, 16, 27) 70%, #0e2c48 30%);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 768px) {
+  .what-syucay {
+    background: linear-gradient(rgb(12, 16, 27) 50%, #0e2c48 50%);
+  }
+}
+select{
+  background: transparent;
+  color: white;
+  position: relative;
+  border: none;
+  display: inline-block;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1.5rem;
+}
+
+#preloader {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 100ms;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: inherit;
+}
+
+#preloader._hidden {
+  opacity: 0;
+  scale: 2;
+}
+#preloader img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#seminar .link{
+  position: relative;
+  display: inline;
+}
+#seminar .link:hover::after{
+  opacity: 1;
+}
+#seminar .link::after{
+  content: '\F22D';
+  font-family: bootstrap-icons;
+  color: inherit;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition-duration: 100ms;
+}
+.past-event-slider-prev-button:hover i, .past-event-slider-next-button:hover i{
+  color: #e4110e;
+
+}
+.past-event-slider-prev-button i, .past-event-slider-next-button i{
+  color: black;
+  font-size: 1.5rem;
+}
+.btn-text .bi{
+  transition: transform 100ms;
+}
+.btn-text:hover .bi{
+  transform: translateX(10%);
+}
+.swiper-slide._blur{
+  opacity: 0.5;
+  pointer-events: none;
+}
+.date::after{
+  content: '';
+  background: inherit;
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  width: 100vw;
+  height: 100%;
+
+}
+
+
+.image{
+ z-index: 100000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.main-container{
+  background: linear-gradient(#0e2c48 50%, #fff 50%);
+}
+@media (max-width: 990px) {
+  .main-container{
+    background: linear-gradient(0deg, #fff 70%, #0e2c48 61%);
+  }
+
+}
+@media (max-width: 767px) {
+  .main-container{
+    background: linear-gradient(0deg, #fff 78%, #0e2c48 61%);
+  }
+
+}

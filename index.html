@@ -1,0 +1,1380 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bs-height.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./css/sal.css">
+  <title>СЮЦАЙ</title>
+</head>
+
+<body data-scrollbar="blue" class="bg-body">
+<div class="offcanvas offcanvas-end bg-body text-white" style="z-index: 1051" tabindex="-1" id="burgerMenu"
+     aria-labelledby="burgerMenuLabel">
+
+  <div class="offcanvas-header p-0">
+    <ul class="nav nav-tabs burger-tabs col-12 border-0" id="myTab" role="tablist">
+      <li class="nav-item col-4" role="presentation">
+        <button class="nav-link col-12 py-3 text-white active" id="nav-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-tab-pane" type="button"
+                role="tab" aria-controls="nav-tab-pane" aria-selected="true">Навигация
+        </button>
+      </li>
+      <li class="nav-item col-4" role="presentation">
+        <button class="nav-link col-12 py-3 text-white" id="contacts-tab" data-bs-toggle="tab"
+                data-bs-target="#contacts-tab-pane" type="button"
+                role="tab" aria-controls="contacts-tab-pane" aria-selected="false">Контакты
+        </button>
+      </li>
+      <li type="button" data-bs-dismiss="offcanvas" aria-label="Close"
+          class="col-4 nav-link d-flex justify-content-center align-items-center">
+
+        <i class="bi bi-x-lg text-white"></i>
+
+      </li>
+    </ul>
+
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="tab-content h-12" id="myTabContent">
+      <div class="tab-pane fade active show" id="nav-tab-pane" role="tabpanel" aria-labelledby="nav-tab" tabindex="0">
+        <ul class="navbar-nav menu-burger px-3">
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#main"><h5>Главная</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                  <button class="accordion-button col-12 p-0 bg-body text-white" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true"
+                          aria-controls="collapseOne">
+                    <h5>Новости</h5>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse bg-body collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <input type="text" class="form-control rounded-0" placeholder="Поиск"
+                           aria-label="Recipient's username"
+                           aria-describedby="basic-addon2">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#"><h5>Об авторе</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#teacher"><h5>Об учителе</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#what-syucay"><h5>Что такое сюцай</h5></a>
+          </li>
+
+          <li class="nav-item col-12 py-1">
+            <a class="nav-link col-12 text-white" href="#academy"><h5>Об академии</h5></a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="tab-pane fade" id="contacts-tab-pane" role="tabpanel" aria-labelledby="contacts-tab" tabindex="0">
+        <h5 class="py-3">
+          Позвоните, напишите на электронную почту или приезжайте в офис - мы всегда готовы к общению с Вами!
+        </h5>
+        <h3 class="pt-3">
+          <b>
+            г. Москва
+          </b>
+        </h3>
+        <h5 class="">
+          ул. Покрышкина, 4, офис 405
+        </h5>
+        <a class="text-decoration-none" href="">
+          <h6 style="color:#617E98" class="pb-5">
+            Показать на карте
+          </h6>
+        </a>
+
+        <a class="text-decoration-none d-flex gap-3 mt-4 align-items-center text-white" href="tel:+74954954954">
+          <h2 class="m-0">+7 495 495 49 54 </h2>
+          <img width="37" height="37" class="align-self-start" src="./img/icons/whatsapp-fill.svg" alt="w">
+        </a>
+        <a class="text-decoration-none d-flex gap-3 mt-4 align-items-center text-white" href="tel:+74954954954">
+          <h2 class="m-0">+7 495 495 49 54 </h2>
+          <img width="32" height="32" class="align-self-start" src="./img/icons/telegram-fill.svg" alt="w">
+        </a>
+
+        <h6 style="color:#617E98" class="pt-5">
+          График работы
+
+        </h6>
+        <h5>
+          Пн-Пт: с 10:00 до 19:00
+        </h5>
+        <h5>
+          Сб, Вс: выходной
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header style="z-index: 50" class="position-sticky overflow-hidden top-0 left-0 z-5 col-12 bg-body py-1">
+  <div class="container-md d-flex justify-content-between align-items-center">
+    <a class="navbar-brand d-md-none d-flex" href="index.html">
+      <img src="./img/logo.svg" alt="zhanat">
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light main-menu d-md-flex d-none">
+
+      <a class="navbar-brand d-md-flex d-none" href="index.html">
+        <img src="./img/logo.svg" alt="zhanat">
+      </a>
+
+
+      <ul class="d-flex navbar-nav flex-row menu mx-5 mb-2 mb-lg-0">
+
+        <li class="nav-item px-3">
+          <a class="nav-link text-white" href="#seminar">Семинары</a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link text-white" href="#coaching">Коучинг</a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link text-white" href="#group">Обучение в группах</a>
+        </li>
+
+      </ul>
+
+
+    </nav>
+    <div class="col-md-1 col-auto h-12 d-flex justify-content-center align-items-center me-lg-0 me-1">
+      <a data-bs-toggle="offcanvas" href="#burgerMenu" role="button" aria-controls="burgerMenu" class="btn btn-flat">
+        <img src="./img/burger.svg" alt="">
+      </a>
+    </div>
+  </div>
+
+</header>
+
+<div id="main" class="container-md">
+  <!--  АКАДЕМИЯ ЦИФРОВОЙ НАУКИ СЮЦАЙ-->
+  <section class="col-12 d-flex justify-content-between flex-md-row flex-column">
+
+    <div class="col-xxl-6 col-md-6 py-5 d-flex flex-column justify-content-end">
+      <h1 style="font-size: 48px;" class="text-white text-uppercase mb-lg-0 mb-5" data-sal="flip-up" data-sal-delay="1"
+          data-sal-duration="1000">
+        <b>
+          Академия цифровой <br> науки <span class="text-danger">сюцай</span>
+
+        </b>
+      </h1>
+      <h3 style="font-size: 1.6rem" class="text-white text-uppercase mt-5">
+        <b>числа для жизни и бизнеса</b>
+      </h3>
+      <h5 class="col-xxl-8 text-white my-5 b-normal">
+        Напишите вашу дату рождения и получите бесплатно ключевую характеристику <br> вашей личности
+      </h5>
+      <button class="btn btn-primary col-xxl-6 col-md-5 p-0">
+        <input style="border-radius: inherit" type="text" class="form-control item col-12 p-4 h-12 border-0"
+               id="birth-date" placeholder="ДД.ММ.ГГГГ">
+      </button>
+
+    </div>
+    <div style="background: url(./img/numbers.webp)"
+         class="col-xl-6 col-md-6 m-0 d-flex flex-lg-row flex-column justify-content-end">
+      <div id="photo-slider" class="m-0 col-lg-7 col-12 swiper">
+
+
+        <div class="swiper-wrapper col-xxl-12">
+
+          <div class="swiper-slide col-xxl-12 d-flex justify-content-end">
+            <img width="400" class="img-cover" src="./img/diplom.png" alt="">
+          </div>
+          <div class="swiper-slide col-xxl-12 d-flex justify-content-end">
+            <img width="400" class="img-cover" src="./img/portrait.jpg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-lg-2 bg-body col-12 z-2 d-flex pt-5 flex-lg-column justify-content-lg-end flex-column-reverse">
+
+        <ul
+          class="navbar-nav d-flex flex-lg-column justify-content-lg-start justify-content-center flex-row gap-lg-4 gap-5 mb-4">
+
+          <li class="nav-item">
+            <a class="nav-link social-button people-button text-white d-flex justify-content-center col-12" href="#">
+              <img src="./img/icons/people.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link social-button instagram-button text-white d-flex justify-content-center col-12" href="#">
+              <img src="./img/icons/instagram.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link social-button skype-button text-white d-flex justify-content-center col-12" href="#">
+              <img src="./img/icons/skype.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link social-button whatsapp-button text-white d-flex justify-content-center" href="#">
+              <img src="./img/icons/whatsapp.svg" alt="">
+            </a>
+          </li>
+
+        </ul>
+        <ul
+          class="navbar-nav d-lg-flex d-none flex-column mb-2 mb-lg-0">
+          <li class="nav-item py-0">
+            <button class="btn-default slider-button photo-slider-prev-button col-12 py-2 my-0">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+          </li>
+          <li class="nav-item  py-0">
+            <button class="btn-default slider-button photo-slider-next-button col-12 py-2 my-0">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+
+
+  </section>
+</div>
+
+<section class="col-12 academy bg-danger pt-lg-0 pt-4" data-sal="slide-up" data-sal-delay="1" data-sal-duration="1000">
+
+  <div id="academy" class="container-md p-lg-auto p-0">
+    <div class="col-12 d-lg-flex d-block align-items-sm-center align-items-start overflow-hidden">
+      <div class="col-xxl-3 px-lg-0 px-3 col-xs-12 text-white">
+        <h5 class="b-normal">Академия организует</h5>
+        <h3 class="mt-5 mb-4">
+          <b class="text-uppercase">БЛИЖАЙШИЕ МЕРОПРИЯТИЯ</b>
+        </h3>
+        <div class="d-lg-flex d-none gap-3 mb-4">
+          <div style="width: 52px; height: 52px"
+               class="btn d-flex justify-content-center align-items-center event-slider-prev-button btn-default bg-white rounded-5">
+            <h4 class="m-0"><i class="text-black bi bi-arrow-left"></i></h4>
+          </div>
+
+          <div style="width: 52px; height: 52px"
+               class="btn d-flex justify-content-center align-items-center event-slider-next-button btn-default bg-white rounded-5">
+            <h4 class="m-0"><i class="text-black bi bi-arrow-right"></i></h4>
+          </div>
+
+        </div>
+
+      </div>
+      <div id="event-slider" class="swiper h-12 col-md-9 col-xs-12 m-0">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-flex flex-sm-row flex-column">
+            <div class="col-sm-6 col-12 d-flex">
+              <div class="col-8 overflow-hidden">
+                <img class="hover-scale" width="420" height="100%" src="./img/flower.jpg" alt="">
+              </div>
+              <div class="col-4">
+                <div class="col-12 h-6 bg-white d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="text-uppercase m-0">
+                    <b>Начало</b>
+                  </h5>
+                  <span style="font-size: 4rem">
+                    <b>11</b>
+                  </span>
+                  <h5 class="text-uppercase m-0">
+                    <b>Июн. 22</b>
+                  </h5>
+                </div>
+                <img width="100%" height="50%" src="./img/flower.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 bg-black py-5 px-4 d-flex flex-column justify-content-between">
+
+              <h4>
+                <b class="text-uppercase text-white">
+                  Семинар четвёртого уровня аналитики данных
+                </b>
+              </h4>
+              <div class="btn btn-secondary col-xxl-5 col-sm-10">
+                <span>Подробнее</span>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide d-flex flex-sm-row flex-column">
+            <div class="col-sm-6 col-12 d-flex">
+              <div class="col-8 overflow-hidden">
+                <img class="hover-scale" width="420" height="100%" src="./img/flower.jpg" alt="">
+              </div>
+              <div class="col-4">
+                <div class="col-12 h-6 bg-white d-flex flex-column justify-content-center align-items-center">
+                  <h5 class="text-uppercase m-0">
+                    <b>Начало</b>
+                  </h5>
+                  <span style="font-size: 4rem">
+                    <b>11</b>
+                  </span>
+                  <h5 class="text-uppercase m-0">
+                    <b>Июн. 22</b>
+                  </h5>
+                </div>
+                <img width="100%" height="50%" src="./img/flower.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-12 bg-black py-5 px-4 d-flex flex-column justify-content-between">
+
+              <h4>
+                <b class="text-uppercase text-white">
+                  Семинар четвёртого уровня аналитики данных
+                </b>
+              </h4>
+              <div class="btn btn-secondary col-xxl-5 col-sm-10">
+                <span>Подробнее</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!--  Что такое сюцай-->
+<section class="col-12 what-syucay overflow-hidden mb-5">
+  <div class="container-md">
+    <div class="col-12 d-flex flex-md-row flex-column">
+      <div data-sal="slide-right" data-sal-delay="100" data-sal-duration="700"
+           class="col-md-4 col-sm-12 pt-6 d-flex justify-content-end align-items-end">
+        <img class="col-12 img-cover" src="./img/portrait.jpg" alt="">
+      </div>
+
+      <div class="col-md-8 col-xs-12 pt-md-6 pt-0 d-flex bg-body flex-sm-row flex-column">
+        <div id="teacher" class="col-md-6 col-12 ps-5 pe-4 py-5 bg-white d-flex flex-column justify-content-between">
+          <div class="">
+            <h2 class="text-uppercase pb-5 m-0">
+              <b>об учителе</b>
+            </h2>
+            <p class="col-12">
+              Равным образом начало повседневной работы
+              по формировани позиции требуют от нас
+              анализа направлений прогрессивного
+              развития. Равным образом начало
+              повседневной работы по формировани
+              позиции требуют от нас анализа направлений
+              прогрессивного развития.
+
+            </p>
+            <p class="pt-1 col-12">
+              Равным образом начало повседневной работы
+              по формировани позиции требуют от нас
+              анализа направлений прогрессивного
+              развития. Равным образом начало
+              повседневной работы по формировани
+              позиции требуют от нас анализа направлений
+              прогрессивного развития.
+
+            </p>
+          </div>
+          <a href="/teacher.html"
+             class="btn btn-text d-flex align-items-center gap-3 m-0 p-0 text-start h6 text-primary">
+            <span class="text-decoration-underline">
+              На страницу об учителе
+            </span>
+            <i class="bi h2 m-0 bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div id="what-syucay" data-sal="slide-left" data-sal-delay="100" data-sal-duration="700"
+             class="col-md-6 col-12 pe-5 ps-4 py-5 d-flex flex-column justify-content-between">
+          <div class="">
+            <h2 class="text-uppercase text-white pb-5 m-0">
+              <b>Что такое сюцай</b>
+            </h2>
+            <p class="text-white">
+              Равным образом начало повседневной работы
+              по формировани позиции требуют от нас
+              анализа направлений прогрессивного
+              развития. Равным образом начало
+              повседневной работы по формировани
+              позиции требуют от нас анализа направлений
+              прогрессивного развития.
+
+            </p>
+            <p class="text-white pt-1">
+              Равным образом начало повседневной работы
+              по формировани позиции требуют от нас
+              анализа направлений прогрессивного
+              развития. Равным образом начало
+              повседневной работы по формировани
+              позиции требуют от нас анализа направлений
+              прогрессивного развития.
+
+            </p>
+          </div>
+          <button class="btn btn-secondary col-xxl-6 col-12">
+            <span>Подробнее</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+<!--  ПРОШЕДШИЕ МЕРОПРИЯТИЯ-->
+<div class="col-12 overflow-x-hidden">
+  <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1000" class="container-md ">
+
+    <section class="col-12 d-xl-flex d-block my-5 py-5 overflow-visible">
+
+      <div class="col-xl-3 pt-5">
+        <a href="#" class="text-decoration-none border-bottom border-danger">
+        <span class="text-danger">
+          Архив мероприятий
+        </span>
+        </a>
+        <h2 class="h1 text-uppercase my-5 text-white">
+          <b>прошедшие мероприятия</b>
+        </h2>
+        <p class="text-white col-lg-10">
+          С другой стороны рамки и место
+          обучения кадров в значительной
+          степени обуславливает создание
+          существенных финансовых и
+          административных условий.
+        </p>
+      </div>
+      <div
+        class="col-xl-1 d-flex flex-xl-column justify-content-xl-end justify-content-between align-items-center gap-3 mt-md-0 mb-lg-5 pb-lg-5">
+
+        <button class="btn past-event-slider-prev-button btn-default bg-white rounded-5">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+
+        <button class="btn past-event-slider-next-button mb-lg-5 btn-default bg-white rounded-5">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+
+
+      </div>
+      <div id="past-event-slider" class="col-xl-10 col-md-12 swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide past-event col-xxl-4 py-5 text-white d-flex align-items-center  flex-column">
+            <img class="background-image img-cover img-cover" src="./img/portrait.jpg" alt="">
+            <span class=" mt-5">2019</span>
+            <h3 class="mb-5 text-uppercase">15 Мар</h3>
+            <span class="mb-3 b-normal h5">г. Москва</span>
+            <h2 class="mb-1 text-uppercase text-center">
+              <b>
+                групповой <br> мастер-класс
+              </b>
+            </h2>
+            <h5 class="mb-5 mt-4">1500</h5>
+            <a href="" class="btn btn-danger py-3 col-8 text-lowercase bg-danger rounded-5 mt-2">
+              <span>Завершенно</span>
+            </a>
+          </div>
+          <div class="swiper-slide past-event col-xxl-4 py-5 text-white d-flex align-items-center  flex-column">
+            <img class="background-image img-cover img-cover" src="./img/portrait.jpg" alt="">
+            <span class=" mt-5">2019</span>
+            <h3 class="mb-5 text-uppercase">15 Мар</h3>
+            <span class="mb-3 b-normal h5">г. Москва</span>
+            <h2 class="mb-1 text-uppercase text-center">
+              <b>
+                групповой <br> мастер-класс
+              </b>
+            </h2>
+            <h5 class="mb-5 mt-4">1500</h5>
+            <a href="" class="btn btn-danger py-3 col-8 text-lowercase bg-danger rounded-5 mt-2">
+              <span>Завершенно</span>
+            </a>
+          </div>
+          <div class="swiper-slide past-event col-xxl-4 py-5 text-white d-flex align-items-center  flex-column">
+            <img class="background-image img-cover img-cover" src="./img/portrait.jpg" alt="">
+            <span class=" mt-5">2019</span>
+            <h3 class="mb-5 text-uppercase">15 Мар</h3>
+            <span class="mb-3 b-normal h5">г. Москва</span>
+            <h2 class="mb-1 text-uppercase text-center">
+              <b>
+                групповой <br> мастер-класс
+              </b>
+            </h2>
+            <h5 class="mb-5 mt-4">1500</h5>
+            <a href="" class="btn btn-danger py-3 col-8 text-lowercase bg-danger rounded-5 mt-2">
+              <span>Завершенно</span>
+            </a>
+          </div>
+          <div class="swiper-slide past-event col-xxl-4 py-5 text-white d-flex align-items-center  flex-column">
+            <img class="background-image img-cover img-cover" src="./img/portrait.jpg" alt="">
+            <span class=" mt-5">2019</span>
+            <h3 class="mb-5 text-uppercase">15 Мар</h3>
+            <span class="mb-3 b-normal h5">г. Москва</span>
+            <h2 class="mb-1 text-uppercase text-center">
+              <b>
+                групповой <br> мастер-класс
+              </b>
+            </h2>
+            <h5 class="mb-5 mt-4">1500</h5>
+            <a href="" class="btn btn-danger py-3 col-8 text-lowercase bg-danger rounded-5 mt-2">
+              <span>Завершенно</span>
+            </a>
+          </div>
+          <div class="swiper-slide past-event col-xxl-4 py-5 text-white d-flex align-items-center  flex-column">
+            <img class="background-image img-cover img-cover" src="./img/portrait.jpg" alt="">
+            <span class=" mt-5">2019</span>
+            <h3 class="mb-5 text-uppercase">15 Мар</h3>
+            <span class="mb-3 b-normal h5">г. Москва</span>
+            <h2 class="mb-1 text-uppercase text-center">
+              <b>
+                групповой <br> мастер-класс
+              </b>
+            </h2>
+            <h5 class="mb-5 mt-4">1500</h5>
+            <a href="" class="btn  btn-danger py-3 col-8 text-lowercase bg-danger rounded-5 mt-2">
+              <span>Завершенно</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</div>
+
+<!--семинар Энергия цифр-->
+<section id="seminar" class="col-12 seminar my-5">
+
+  <div class="container-xl p-xl-auto p-0">
+    <div class="col-12 d-flex flex-xl-row flex-column">
+      <div class="col-xxl-6 col-xs-12 d-flex flex-sm-row flex-column">
+        <div class="col-xxl-7 col-sm-6 ps-xl-0  ps-sm-auto ps-5 pe-5">
+          <h3 class="text-uppercase text-bg-body pt-5">
+            <b>Семинар</b>
+          </h3>
+          <h2 class="h1 text-uppercase text-white mb-5">
+            <b>энергия цифр</b>
+          </h2>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur cum delectus doloribus hic
+            laudantium magni maxime nostrum quis voluptates! A architecto eaque ex explicabo illum numquam quaerat quia
+            recusandae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur cum delectus
+
+          </p>
+          <h4 class="text-white my-5">
+            <b class="d-flex align-items-center"><img class="me-4" src="./img/icons/price.svg" alt="">20 000 ₽</b>
+          </h4>
+        </div>
+        <div class="" style="width: 100%; background: url(./img/speaker.png)  no-repeat center/cover; height: 503px;"></div>
+      </div>
+
+      <div class="col-xxl-6 col-xs-12 d-flex flex-sm-row flex-column">
+        <div class="col-sm-6 col-12 bg-white ps-5 py-5 d-flex justify-content-between p-3 flex-column">
+          <div class=" d-flex flex-column gap-5">
+            <h4 class="text-uppercase d-flex align-items-center gap-4">
+              <img src="./img/icons/calendar.svg" alt="">
+              <b>Январь 2021</b>
+            </h4>
+            <h4 class="text-uppercase d-flex align-items-center gap-4">
+              <img src="./img/icons/clock.svg" alt="">
+              <b>7 дней</b>
+            </h4>
+            <h4 class="text-uppercase d-flex align-items-center gap-4">
+              <img src="./img/icons/people-black.svg" alt="">
+              <b>30/100</b>
+            </h4>
+          </div>
+          <div class="btn btn-secondary col-md-10 col-12 mt-5">
+            <span>Подробнее</span>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-12 bg-danger d-flex flex-column justify-content-center gap-5 text-white text-uppercase py-5 ps-5">
+
+          <a href="#" class="h5 mb-0 mt-3 text-decoration-none link">
+            семинар <br> энергия цифр
+          </a>
+          <a href="#" class="h5 m-0 text-decoration-none link">
+            семинар <br> нумерология
+          </a>
+          <a href="#" class="h5 m-0 text-decoration-none link">
+            вебинар <br> дизайн человека
+          </a>
+          <a href="#" class="h5 m-0 text-decoration-none link">
+            курс <br> цифры в жизнь
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+
+<!--Расписание-->
+<div class="container-md pt-5">
+
+  <section class="row">
+    <div class="ps-0 col-xxl-12 mb-4 d-flex flex-sm-row flex-column justify-content-between">
+      <div class="d-flex flex-sm-row flex-column align-items-sm-center align-items-start gap-3">
+        <h4 class="text-white text-uppercase">
+          <b>расписание</b>
+        </h4>
+        <h4 class="text-danger text-uppercase border-bottom border-2 border-danger">
+          <b>08 марта 2021</b>
+        </h4>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-md-start justify-content-center my-md-0 my-3 gap-2 col-md-auto col-12">
+        <select class="h5 b-normal text-white" name="events" id="">
+          <option value="1">Все события</option>
+        </select>
+        <h5 class="bi m-0 text-white bi-chevron-down"></h5>
+      </div>
+    </div>
+
+    <div class="col-12 px-0 d-flex row-gap-4 column-gap-5 flex-wrap">
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="schedule-card bg-white rounded-0 ps-4 pt-4 pb-3 pe-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <span>1/4 занятие</span>
+          <span class="position-relative d-flex badged badge-danger">
+              Семинар
+            </span>
+        </div>
+        <h5 class="text-uppercase py-3">
+          <b>
+            Цифровой <br> коннект
+          </b>
+        </h5>
+        <span>
+            17 марта / 16:00 - 20:00
+          </span>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Коучинг разные курсы-->
+  <section data-sal="slide-up" data-sal-delay="1" data-sal-duration="1000" id="coaching" class="row my-5">
+    <div class="col-12 d-flex hs-sm-6 hs-12 position-relative align-items-end px-0">
+      <div
+        class="col-11 d-flex flex-sm-row flex-column course-slider-header justify-content-between position-absolute top-0 left-0">
+        <h2 class="h1 text-uppercase text-white">
+          <b>коучинг <br> разные курсы</b>
+        </h2>
+        <div class="">
+          <button class="btn bg-transparent course-slider-prev-button text-white">
+
+            <i class="bi bi-arrow-left"></i>
+
+          </button>
+          <button class="btn bg-transparent course-slider-next-button text-white">
+
+            <i class="bi bi-arrow-right"></i>
+
+          </button>
+        </div>
+      </div>
+      <div id="course-slider" class="h-12 col-xxl-12 d-flex align-items-end swiper">
+        <div class="swiper-wrapper d-flex h-12 align-items-end">
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div class="pb-1 pt-5 ps-4 h-8 d-flex course flex-column justify-content-center gap-3 p-3 bg-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-danger h5 btn text-white col-7 bg-danger rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div
+              class="pb-1 pt-5 ps-4 h-8 d-flex course flex-column justify-content-center gap-3 p-3 bg-danger text-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-danger h5 btn col-7 bg-white rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div
+              class="pb-1 pt-5 ps-4 h-8 d-flex course flex-column justify-content-center gap-3 p-3 bg-primary text-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-white h5 btn text-white col-7 bg-danger rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div class="pb-1 pt-5 ps-4 h-8 d-flex course flex-column justify-content-center gap-3 p-3 bg-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-danger h5 btn text-white col-7 bg-danger rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div class="pb-1 pt-5 ps-4 h-8 d-flex course flex-column justify-content-center gap-3 p-3 bg-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-danger h5 btn text-white col-7 bg-danger rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div
+              class="pb-1 pt-5 ps-4 h-8 d-flex course flex-column justify-content-center gap-3 p-3 bg-danger text-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-danger h5 btn col-7 bg-white rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div
+              class="pb-1 pt-5 ps-4 h-8 d-flex course flex-column justify-content-center gap-3 p-3 bg-primary text-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-white h5 btn text-white col-7 bg-danger rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+          <div class="swiper-slide col-xxl-3 d-flex h-12 align-items-end">
+            <div class="pb-1 pt-5 ps-4 h-8 d-flex course justify-content-center flex-column gap-3 p-3 bg-white">
+              <div class="">
+                <h5 class="b-normal m-0">4 часа / 100 000 рублей</h5>
+                <h4 class="course__header text-uppercase mt-4">
+                  <b>бизнес <br> консультация</b>
+                </h4>
+              </div>
+              <small class="course__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum incidunt rerum tenetur veritatis!
+                Ab
+                error impedit nam, nisi quo rerum sit soluta. Alias beatae
+              </small>
+              <div class="col-12 d-flex course__author gap-3 mt-3">
+                <img src="./img/speaker.png" class="rounded-5" width="64" height="64" alt="">
+                <div class="d-flex flex-column justify-content-center">
+                  <h6 class="m-0">
+                    <b>Сергей Теплых</b>
+                  </h6>
+                  <span>Коуч</span>
+                </div>
+
+              </div>
+              <a class="course__button text-uppercase text-danger h5 btn text-white col-7 bg-danger rounded-5">
+                <h6 class="m-0">Купить</h6>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Обучение в группах-->
+  <section id="group" class="row hs-lg-9 my-5">
+    <div class="col-xxl-12">
+
+      <h2 class="h1 text-white pt-5 pb-4 text-uppercase">
+        <b>Обучение в группах</b>
+      </h2>
+
+    </div>
+    <div class="col-xxl-12 d-flex align-items-center flex-lg-row flex-column">
+
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1300"
+           class="col-xxl-4 position-relative overflow-hidden bg-black text-white px-5 pt-5 h-lg-10">
+        <div class="diplom bg-danger">
+          <h4 class="text-uppercase d-inline pb-1">диплом</h4>
+          <b style="font-size: calc(0.3rem + 0.3vw)"
+             class="text-uppercase col-11 text-center text-wrap">
+            государственного образца
+          </b>
+        </div>
+        <h4 class="text-uppercase pb-5 m-0">
+          <b>1 ступень <br> мастеров</b>
+        </h4>
+        <h2>
+          <b>250 000 руб</b>
+
+        </h2>
+        <h5>
+          <b>1 месяц</b>
+        </h5>
+        <p class="mt-5">
+          Таким образом реализация намеченных плановых заданий играет важную роль в формировании системы обучения
+          кадров
+        </p>
+        <a href="/product.html" class="btn btn-danger bg-danger rounded-5 px-5 mt-3 text-uppercase">
+          <span class="m-0 h5">беру!</span>
+        </a>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="300" data-sal-duration="1100"
+           class="col-xxl-4 position-relative overflow-hidden bg-white text-black d-flex h-lg-12 flex-column align-items-center p-4">
+        <h4 class="text-uppercase text-center py-5">
+          <b>бизнес <br> курс</b>
+        </h4>
+        <h2>
+          <b>300 000 руб</b>
+
+        </h2>
+        <h5>
+          <b>1 месяц</b>
+        </h5>
+        <p class="pt-3 pb-5 text-center">
+          Таким образом реализация намеченных плановых заданий играет важную роль в формировании системы обучения
+          кадров
+        </p>
+        <a href="/product.html" class="btn btn-danger bg-danger rounded-5 px-5 mt-5 text-uppercase">
+          <span class="m-0 h5">беру!</span>
+        </a>
+      </div>
+      <div data-sal="slide-up" data-sal-delay="1" data-sal-duration="1300"
+           class="col-xxl-4 position-relative overflow-hidden bg-black text-white px-5 pt-5 h-lg-10">
+
+        <h4 class="text-uppercase pb-5 m-0">
+          <b>1 ступень <br> мастеров</b>
+        </h4>
+        <h2>
+          <b>250 000 руб</b>
+
+        </h2>
+        <h5>
+          <b>1 месяц</b>
+        </h5>
+        <p class="mt-5">
+          Таким образом реализация намеченных плановых заданий играет важную роль в формировании системы обучения
+          кадров
+        </p>
+        <a href="/product.html" class="btn btn-danger bg-danger rounded-5 px-5 mt-3 text-uppercase">
+          <span class="m-0 h5">беру!</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Отзывы-->
+  <section data-sal="slide-up" data-sal-delay="1" data-sal-duration="1500"
+           class="row my-5 pt-5 hs-sm-8 hs-xs-12 overflow-hidden">
+    <div class="col-12 d-flex flex-sm-row flex-column">
+      <h2 class="h1 text-uppercase col-lg-4 text-white">
+        отзывы
+      </h2>
+      <div class="col-md-8 col-12 bg-black d-flex justify-content-md-end pe-lg-5 pe-0">
+        <ul class="nav nav-tabs border-0 " id="commentsTab" role="tablist">
+          <li class="nav-item h5 mb-0 border-0 col-sm-auto col-xs-4" role="presentation">
+            <button class="nav-link rounded-0 py-4 px-sm-4 px-1 text-white text-uppercase active" id="text-tab"
+                    data-bs-toggle="tab" data-bs-target="#text" type="button"
+                    role="tab" aria-controls="text" aria-selected="true">
+              <span class="h4"><b>текст</b></span>
+            </button>
+          </li>
+          <li class="nav-item h5 mb-0 border-0 col-sm-auto col-xs-4" role="presentation">
+            <button class="nav-link rounded-0 py-4 px-sm-4 px-1 text-white text-uppercase" id="video-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#video" type="button"
+                    role="tab" aria-controls="video" aria-selected="false">
+              <span class="h4"><b>видео</b></span>
+            </button>
+          </li>
+          <li class="nav-item h5 mb-0 border-0 me-lg-5 me-0 col-sm-auto col-xs-4" role="presentation">
+            <button class="nav-link rounded-0 py-4 px-sm-4 px-1 text-white text-uppercase" id="photo-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#photo" type="button"
+                    role="tab" aria-controls="photo" aria-selected="false">
+              <span class="h4"><b>фото</b></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="col-xxl-12 h-12 d-flex">
+      <div style="background: #D9D9D9;" class="col-xxl-4"></div>
+      <div id="commentsTabContent" class="col-xxl-8 h-12 tab-content">
+        <div class="tab-pane overflow-y-auto h-12 p-5 bg-white text-black fade show active" id="text" role="tabpanel"
+             aria-labelledby="text-tab">
+          <h5 class="b-normal">Название компании</h5>
+          <h3 class="b-normal">
+            <b>Фамилия Имя</b>
+          </h3>
+          <p class="h5 b-normal py-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut eligendi rem voluptatibus? Amet autem
+            deleniti dolorum eos et, excepturi hic molestias officia pariatur quod ratione similique tempora tempore
+            veritatis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut eligendi rem voluptatibus? Amet autem
+            deleniti dolorum eos et, excepturi hic molestias officia pariatur quod ratione similique tempora tempore
+            veritatis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut eligendi rem voluptatibus? Amet autem
+            deleniti dolorum eos et, excepturi hic molestias officia pariatur quod ratione similique tempora tempore
+            veritatis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut eligendi rem voluptatibus? Amet autem
+            deleniti dolorum eos et, excepturi hic molestias officia pariatur quod ratione similique tempora tempore
+            veritatis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut eligendi rem voluptatibus? Amet autem
+            delenit
+          </p>
+        </div>
+        <div class="tab-pane overflow-y-auto h-12 bg-white fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+          ...
+        </div>
+        <div class="tab-pane overflow-y-auto h-12 bg-white fade" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+          ...
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+<footer class="pt-5 mt-5 overflow-x-hidden">
+
+  <div class="container-md">
+    <div class="col-12 d-flex text-white flex-md-row flex-column">
+      <div data-sal="slide-right" data-sal-delay="1" data-sal-duration="1500" class="col-md-4 pe-5">
+        <h2 class="h1 text-uppercase">
+          контакты
+        </h2>
+        <p class="pb-4 h5 b-normal">
+          Позвоните, напишите на электронную почту или приезжайте в офис - мы всегда готовы к общению с Вами!
+        </p>
+        <h4 class="mb-0 pt-0">
+          Москва
+        </h4>
+        <p>
+          ул. Покрышкина, 4, офис 405
+        </p>
+        <a class="text-decoration-none" href="">
+          <h6 style="color:#617E98" class="pb-3">
+            Показать на карте
+          </h6>
+        </a>
+
+        <a class="text-decoration-none d-flex gap-xl-4 gap-2 mt-4 align-items-center text-white"
+           href="tel:+74954954954">
+          <h3>+7 495 495 49 54 </h3>
+          <img width="37" height="37" class="align-self-start footer-icon" src="./img/icons/whatsapp-fill.svg" alt="w">
+        </a>
+        <a class="text-decoration-none d-flex gap-xl-4 gap-2 mb-4 align-items-center text-white"
+           href="tel:+74954954954">
+          <h3>+7 495 495 49 54 </h3>
+          <img width="37" height="37" class="align-self-start footer-icon" src="./img/icons/telegram-fill.svg" alt="t">
+        </a>
+
+        <h6 style="color:#617E98" class="pt-3">
+          График работы
+
+        </h6>
+        <h5>
+          Пн - Пт: с 10:00 до 19:00
+        </h5>
+        <h5>
+          Сб - Вс: выходной
+        </h5>
+      </div>
+      <div data-sal="slide-left" data-sal-delay="1" data-sal-duration="1500" data-state="default"
+           class="col-md-8 bg-danger form-container position-relative pb-2 ps-sm-5 ps-2 pe-sm-5 pe-2 pt-sm-5 pt-2">
+        <h4 class="mb-2">Напишите нам</h4>
+        <span>Заполните форму, наш менеджер свяжется с вами в ближайшее время</span>
+        <form class="" id="user-data">
+          <div class="fallback">
+            <img class="loader" src="./img/icons/loading.svg" alt="">
+
+            <div class="error justify-content-center align-items-center flex-column">
+              <i style="font-size: 8rem" class="bi bi-x-lg text-danger"></i>
+              <div class="h6 text-danger bg-white">
+                <b class="text-center">Ошибка на сервере, попробуйте позже</b>
+              </div>
+            </div>
+            <div class="success justify-content-center align-items-center flex-column">
+              <img src="./img/icons/check-success.svg" alt="">
+              <div class="h6 text-success bg-white">
+                <b class="text-center">Спасибо! Наш менеджер свяжется с вами в ближайшее время</b>
+              </div>
+            </div>
+          </div>
+          <input autocomplete="off" type="text" class="form-control rounded-0 mt-3" name="name" id="name"
+                 placeholder="Ваше имя">
+          <div class="invalid-feedback bg-white">
+            Ваше имя слишком короткое! Введите хотя бы две буквы ☹
+          </div>
+          <div class="valid-feedback bg-white">
+            Красивое имя! 🥳
+          </div>
+          <div class="d-flex gap-3 flex-sm-row flex-column">
+            <input autocomplete="off" type="email" class="form-control rounded-0 my-3" id="email" name="email"
+                   placeholder="E-mail">
+            <input autocomplete="off" type="tel" class="form-control rounded-0 my-3" name="phone" id="phone"
+                   placeholder="+7 (___) ___ __ __">
+          </div>
+          <textarea class="form-control rounded-0" placeholder="Ваше сообщение" name="message" id="message"
+                    rows="5"></textarea>
+
+          <div
+            class="d-flex flex-xl-row flex-column col-12 justify-content-between mt-5 align-items-xl-center gap-xl-0 gap-4 align-items-start">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" name="user-agreement" id="user-agreement">
+              <label class="form-check-label" for="user-agreement">
+                Ознакомлен(а) с пользовательским соглашением
+              </label>
+
+            </div>
+
+            <button disabled type="submit" class="btn btn-secondary col-xl-3 col-sm-4 col-12">
+              <span>Отправить</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="./js/vendor/sal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
